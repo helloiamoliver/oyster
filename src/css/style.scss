@@ -1,12 +1,52 @@
-$color: rebeccapurple;
+$color: var(--color-secondary);
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 body {
   font-family: system-ui;
   background-color: #f9f9f9;
 }
 
+
 h1 {
-  color: $color;
+  color: var(--color-secondary);
   width: fit-content;
   margin-inline: auto;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+.search {
+  padding: 15px 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  width: 100%;
+  font-size: large;
+  margin-bottom: 15px;
+}
+
+.search-button {
+    padding: 15px 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 75%;
+    font-size: large;
+    background-color: $color;
+    color: white;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.viewall-button {
+      padding: 15px 10px;
+      border: 3px solid $color;
+      border-radius: 6px;
+      width: 75%;
+      font-size: large;
+      background-color: white;
+      color: $color;
+      font-family: 'Hammersmith One', sans-serif;
 }
