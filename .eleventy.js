@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.setBrowserSyncConfig(browserSyncConfig);
 
+
+  eleventyConfig.addPassthroughCopy("src/static");
+
   return {
     dir: {
       input: "src",
