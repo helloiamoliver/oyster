@@ -1,18 +1,26 @@
 ---
 layout: base.njk
-title: Hello World
+title: Home
 ---
 
 <div style='width: 100%'>
-    <p>Oyster errors landing page!</p>
+    <p>Ever wondered what the TfL barrier codes mean? Well, now you can find out!<br>
+      Type the number (up to 3 digits in length) below, and find out what's going on.
+    </p>
 </div>
 
 
-<form action="/action_page.php">
-  <input type="number" class="search" min="0" max="133">
-  <input type="submit" value="Search..." class="search-button">
+
+
+	{% include "partials/search.njk" %}
+
+
+
+<!--<p>or</p>-->
+
+
+
+<form action="/all">
+    <input type='submit' class="viewall-button" value="View all" />
 </form>
 
-<p>or</p>
-
-<input type="submit" value="View all" class="viewall-button">

@@ -4,12 +4,18 @@ $color: var(--color-secondary);
 body {
   font-family: system-ui;
   background-color: #f9f9f9;
+  margin: 10px;
 }
 
 
+
+footer {
+  margin-top: auto;
+}
 h1 {
   color: var(--color-secondary);
   width: fit-content;
+  width: -moz-fit-content;
   margin-inline: auto;
   font-family: 'Hammersmith One', sans-serif;
 }
@@ -20,6 +26,10 @@ main {
 }
 
 
+label {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
 .search {
   padding: 15px 10px;
   border: 1px solid gray;
@@ -27,26 +37,36 @@ main {
   width: 100%;
   font-size: large;
   margin-bottom: 15px;
+  margin-top: 5px;
+  background-color: transparent;
 }
 
 .search-button {
     padding: 15px 10px;
     border: 1px solid gray;
     border-radius: 6px;
-    width: 75%;
+    width: 100%;
     font-size: large;
     background-color: $color;
     color: white;
     font-family: 'Hammersmith One', sans-serif;
+    margin-bottom: 10px;
 }
 
 .viewall-button {
       padding: 15px 10px;
       border: 3px solid $color;
       border-radius: 6px;
-      width: 75%;
+      width: 100%;
       font-size: large;
       background-color: white;
       color: $color;
       font-family: 'Hammersmith One', sans-serif;
+}
+
+.contrast {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  padding: 10px;
+  text-align: center;
 }

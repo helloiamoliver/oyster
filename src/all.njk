@@ -1,0 +1,9 @@
+---
+layout: base.njk
+title: All codes
+permalink: all/index.html
+---
+
+{% for item in oyster %}
+<p>{{item.formattedCode}}</p>
+{%endfor%}

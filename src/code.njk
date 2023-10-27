@@ -1,0 +1,12 @@
+---
+layout: base.njk
+pagination:
+  data: oyster
+  size: 1
+  alias: item
+permalink: /{{ item.formattedCode}}/index.html
+title: {{ item.formattedCode }}
+---
+<h1>{{item.formattedCode}}</h1>
+<span class='contrast'>{{item.barrier}}</span>
+<p>{{item.longDesc}}</p>
